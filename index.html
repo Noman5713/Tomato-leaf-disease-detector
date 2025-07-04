@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomato Disease Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🍅 Tomato Disease Detector</h1>
+        <p class="subtitle">Upload a tomato leaf image to detect diseases using AI</p>
+        <div class="model-selector">
+            <h3>AI Model</h3>
+            <div class="model-options">
+                <label class="model-option selected" for="efficientnet">
+                    <input type="radio" id="efficientnet" name="model" value="efficientnet" checked>
+                    <span>EfficientNet (95% accuracy)</span>
+                </label>
+            </div>
+        </div>
+        <div class="upload-area" id="uploadArea">
+            <div class="upload-icon">📷</div>
+            <div class="upload-text">Click to upload or drag and drop an image</div>
+            <div style="color: #bdc3c7; font-size: 0.9em;">Supports JPG, PNG, WebP</div>
+            <input type="file" class="file-input" id="fileInput" accept="image/*">
+        </div>
+        <div class="preview-container" id="previewContainer">
+            <img id="imagePreview" class="image-preview" alt="Preview">
+        </div>
+        <button class="btn" id="predictBtn" disabled>Analyze Image</button>
+        <div class="loading" id="loading">
+            <div class="loading-spinner"></div>
+            <p>Analyzing your tomato leaf image...</p>
+        </div>
+        <div class="results" id="results">
+            <h3>Analysis Results</h3>
+            <div id="predictions"></div>
+            <div id="diseaseInfo" class="disease-info"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
