@@ -38,7 +38,3 @@ A web application that uses Transfer learning to detect diseases in tomato leave
 - Classes: Bacterial Spot, Early Blight, Healthy, Late Blight, Leaf Miner Flies, Magnesium Deficiency, Yellow Leaf Curl Virus
 
 ---
-
-## Credits
-- EfficientNet: [https://arxiv.org/abs/1905.11946](https://arxiv.org/abs/1905.11946)
-- Background removal: [rembg](https://github.com/danielgatis/rembg)
